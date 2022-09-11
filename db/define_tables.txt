@@ -1,0 +1,28 @@
+drop table if exists users;
+create table users (
+	user_id varchar(255) primary key,
+	password  varchar(255) not null,
+	sex       bool not null,
+	birthday  integer not null,
+	region    integer not null
+);
+
+drop table if exists entries;
+create table entries (
+	entry_id integer primary key,
+	user_id varchar(255) not null,
+	entry_title varchar(255) not null,
+	entry_content varchar(255) not null,
+	entry_answer integer not null,
+	entry_date date not null
+);
+
+drop table if exists votes;
+create table votes (
+	vote_id integer primary key,
+	entry_id integer not null,
+	user_id varchar(255) not null,
+	vote_answer integer not null,
+	vote_comment varchar(255),
+	vote_date date not null
+);
