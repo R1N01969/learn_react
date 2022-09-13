@@ -1,0 +1,74 @@
+.CreateUser {
+	width:100vw;
+	height: 100vw;
+	// height:100vw;
+	// left: 50%;
+	position: relative;
+	background: #f0ebeb;
+	// display: flex;
+}
+
+.title {
+	left: 30%;
+	position: absolute;
+}
+
+.inputs {
+	background: #f0ebeb;
+	top: 5%;
+	left: 40%;
+	position: absolute;
+}
+
+.inputs * {
+	display: flex;
+}
+
+.user_id {
+	display: flex;
+}
+
+.user_id * {
+	margin: 10px;
+}
+
+.password {
+	display: flex;
+}
+
+.password * {
+	margin: 10px;
+}
+
+.sex {
+	display: flex;
+}
+
+.sex p {
+	margin: 10px;
+}
+
+.sex input {
+	margin: 5px;
+}
+
+.birthday {
+	display: flex;
+}
+
+.birthday * {
+	margin: 10px;
+}
+
+.region {
+	display: flex;
+}
+
+.region * {
+	margin: 10px;
+}
+
+// submitボタンの中央揃えができていない。いつかやる。。。
+.submit {
+	
+}
